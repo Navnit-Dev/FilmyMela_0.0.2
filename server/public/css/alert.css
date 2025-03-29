@@ -1,0 +1,17 @@
+.swal2-popup {
+    background: #222 !important;  /* Dark Background */
+    color: #fff !important;       /* White Text */
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+.swal2-title {
+    color: #ffcc00 !important;  /* Yellow Title */
+}
+.swal2-confirm {
+    background-color: #007bff !important;  /* Blue Button */
+    border-color: #007bff !important;
+}
+.swal2-cancel {
+    background-color: #d33 !important; /* Red Cancel Button */
+    border-color: #d33 !important;
+}

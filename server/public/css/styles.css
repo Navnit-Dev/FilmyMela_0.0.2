@@ -1,0 +1,122 @@
+.iamtest {
+    border: 2px solid red;
+    padding: 4rem;
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.FeturedBannerContainer {
+    min-height: 80vh;
+    max-height: 60vh;
+}
+
+#movieDesc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+/* Custom scrollbar */
+.MessageContainer::-webkit-scrollbar {
+    height: 8px;
+}
+.MessageContainer::-webkit-scrollbar-thumb {
+    background: #4A5568;
+    border-radius: 10px;
+}
+.MessageContainer::-webkit-scrollbar-track {
+    background: #2D3748;
+}
+
+.MoviCard {
+    min-width: 15rem;
+}
+#Hide {
+    position: fixed;
+    top: 10;
+    z-index: 1000;
+    width: 100vw;
+}
+.TrendingScrollbar {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    /* For smoother scrolling on mobile */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #3498db #f1f1f1;
+    /* Custom scrollbar color (thumb & track) for Firefox */
+    padding-bottom: 10px;
+    /* Adds space at the bottom so scrollbar isn't too close to the content */
+}
+
+.TrendingScrollbar::-webkit-scrollbar {
+    height: 8px;
+    /* Set the height of the scrollbar */
+}
+
+.TrendingScrollbar::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded corners for the thumb */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.TrendingScrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+    border-radius: 5px;
+    /* Rounded corners for the track */
+}
+
+.TrendingScrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9;
+    /* Darker color when hovering over the thumb */
+}
+
+.TrendingCard{
+    min-width: 15rem;
+}
+
+
+@media screen and (max-width: 630px) {
+    #AllMovieContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Creates 2 equal columns */
+        gap: 4px;
+        /* Space between the cards */
+        width: 100vw;
+        /* Make the container full width of the viewport */
+        padding: 1rem;
+        /* Add padding to the container */
+    }
+
+   
+    .MoviCard {
+        min-width: unset;
+        width: 45vw;
+        height: 20rem;
+    }
+
+    #ResultDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Creates 2 equal columns */
+        gap: 4px;
+        /* Space between the cards */
+        width: 100vw;
+        /* Make the container full width of the viewport */
+    }
+}

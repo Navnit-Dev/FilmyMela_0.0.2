@@ -1,0 +1,109 @@
+.MainDescContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.MovieTitle {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.CategoryContainer,
+.LanguageContainer,
+.ActorContainer {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+
+}
+
+.CategoryContainer span,
+.LanguageContainer span,
+.ActorContainer span {
+    background: rgba(94, 94, 94, 0.7);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.Rating,
+.Rating span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#gallery {
+    grid-row: span 2;
+}
+
+.ImgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hr {
+    display: none;
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .MainDescContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .InfoContaner {
+        max-width: 100vw;
+    }
+
+    .CategoryContainer span,
+    .LanguageContainer span,
+    .ActorContainer span {
+        background: rgba(94, 94, 94, 0.7);
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .CategoryContainer,
+    .LanguageContainer,
+    .ActorContainer {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .InfoContaner h2 {
+        color: red;
+    }
+
+    .InfoContaner p {
+        color: grey;
+    }
+
+
+    .hr {
+        display: block;
+        width: 100%;
+        color: red;
+        margin-top: 5px;
+    }
+
+    #gallery {
+        width: 100%;
+    }
+
+    .SpeedDial {
+        position: sticky;
+        top: 100;
+        left: 100;
+        z-index: 1000;
+    }
+}
